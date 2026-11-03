@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet" targetNamespace="http://tempuri.org/DataSet.xsd" xmlns:mstns="http://tempuri.org/DataSet.xsd" xmlns="http://tempuri.org/DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="UnitGeneration_Location1TableAdapter" GeneratorDataComponentClassName="UnitGeneration_Location1TableAdapter" Name="UnitGeneration_Location1" UserDataComponentName="UnitGeneration_Location1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Web.config)" DbObjectName="master.dbo.UnitGeneration_Location1" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT GenerationDate, PGVCL, GETCO, INVTWISE FROM dbo.UnitGeneration_Location1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="GenerationDate" DataSetColumn="GenerationDate" />
+              <Mapping SourceColumn="PGVCL" DataSetColumn="PGVCL" />
+              <Mapping SourceColumn="GETCO" DataSetColumn="GETCO" />
+              <Mapping SourceColumn="INVTWISE" DataSetColumn="INVTWISE" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DataSet" msprop:Generator_DataSetName="DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="UnitGeneration_Location1" msprop:Generator_RowEvHandlerName="UnitGeneration_Location1RowChangeEventHandler" msprop:Generator_RowDeletedName="UnitGeneration_Location1RowDeleted" msprop:Generator_RowDeletingName="UnitGeneration_Location1RowDeleting" msprop:Generator_RowEvArgName="UnitGeneration_Location1RowChangeEvent" msprop:Generator_TablePropName="UnitGeneration_Location1" msprop:Generator_RowChangedName="UnitGeneration_Location1RowChanged" msprop:Generator_RowChangingName="UnitGeneration_Location1RowChanging" msprop:Generator_TableClassName="UnitGeneration_Location1DataTable" msprop:Generator_RowClassName="UnitGeneration_Location1Row" msprop:Generator_TableVarName="tableUnitGeneration_Location1" msprop:Generator_UserTableName="UnitGeneration_Location1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GenerationDate" msprop:Generator_ColumnPropNameInRow="GenerationDate" msprop:Generator_ColumnPropNameInTable="GenerationDateColumn" msprop:Generator_ColumnVarNameInTable="columnGenerationDate" msprop:Generator_UserColumnName="GenerationDate" type="xs:dateTime" />
+              <xs:element name="PGVCL" msprop:Generator_ColumnPropNameInRow="PGVCL" msprop:Generator_ColumnPropNameInTable="PGVCLColumn" msprop:Generator_ColumnVarNameInTable="columnPGVCL" msprop:Generator_UserColumnName="PGVCL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="GETCO" msprop:Generator_ColumnPropNameInRow="GETCO" msprop:Generator_ColumnPropNameInTable="GETCOColumn" msprop:Generator_ColumnVarNameInTable="columnGETCO" msprop:Generator_UserColumnName="GETCO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="INVTWISE" msprop:Generator_ColumnPropNameInRow="INVTWISE" msprop:Generator_ColumnPropNameInTable="INVTWISEColumn" msprop:Generator_ColumnVarNameInTable="columnINVTWISE" msprop:Generator_UserColumnName="INVTWISE" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
